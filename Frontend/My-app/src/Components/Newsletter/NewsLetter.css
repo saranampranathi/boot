@@ -1,0 +1,86 @@
+.newsletter {
+  width: 100%;
+  padding: 70px 10%;
+  background: linear-gradient(135deg, #fdf2f8, #f8fafc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading */
+.newsletter h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.newsletter p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Input + Button container */
+.newsletter div {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 6px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Email input */
+.newsletter input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px 18px;
+  font-size: 15px;
+  border-radius: 40px;
+}
+
+/* Subscribe button */
+.newsletter button {
+  border: none;
+  outline: none;
+  padding: 14px 28px;
+  background-color: #ff4141;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.newsletter button:hover {
+  background-color: #e63636;
+  transform: translateY(-1px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .newsletter h1 {
+    font-size: 26px;
+  }
+
+  .newsletter div {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+    border-radius: 12px;
+  }
+}

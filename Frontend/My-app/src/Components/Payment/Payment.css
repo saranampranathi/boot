@@ -1,0 +1,138 @@
+
+.payment {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f5;
+  padding: 24px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+ 
+.payment-container {
+  background: #ffffff;
+  border: 1px solid #e8e8e4;
+  border-radius: 12px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+ 
+.payment-input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #ddddd8;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: #fafaf8;
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+  box-sizing: border-box;
+}
+ 
+.payment-input::placeholder {
+  color: #aaa9a3;
+}
+ 
+.payment-input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.10);
+  background: #fff;
+}
+ 
+/* ── Payment Method ───────────────────── */
+ 
+.payment-method {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 16px;
+  background: #fafaf8;
+  border: 1px solid #e8e8e4;
+  border-radius: 8px;
+}
+ 
+.payment-method h3 {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888880;
+}
+ 
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #2c2c2a;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background 0.14s;
+}
+ 
+.payment-option:hover {
+  background: #f0f0eb;
+}
+ 
+.payment-option input[type="radio"] {
+  accent-color: #6c63ff;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+ 
+/* ── Total ────────────────────────────── */
+ 
+.payment-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 2px;
+  border-top: 1px solid #e8e8e4;
+  font-size: 15px;
+}
+ 
+.payment-total span:first-child {
+  color: #888880;
+  font-weight: 500;
+}
+ 
+.payment-total span:last-child {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+ 
+/* ── Button ───────────────────────────── */
+ 
+.payment-btn {
+  width: 100%;
+  padding: 13px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.12s;
+  margin-top: 4px;
+}
+ 
+.payment-btn:hover {
+  background: #574fd6;
+}
+ 
+.payment-btn:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,90 @@
+.loginsignup {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.loginsignup-container {
+  width: 380px;
+  background-color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.loginsignup-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input fields */
+.loginsignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.loginsignup-fields input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.loginsignup-fields input:focus {
+  border-color: #555;
+}
+
+/* Button */
+.loginsignup-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.loginsignup-container button:hover {
+  background-color: #555;
+}
+
+/* Login text */
+.loginsignup-login {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+  color: #555;
+}
+
+.loginsignup-login span {
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.loginsignup-login span:hover {
+  text-decoration: underline;
+}
+
+/* Checkbox */
+.loginsignup-agree {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  margin-top: 15px;
+  color: #666;
+}

@@ -1,0 +1,30 @@
+.breadcrum {
+    display: flex;
+    align-items: center;
+    gap: 8px;                 /* space between items */
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.breadcrum img {
+    width: 12px;
+    height: 12px;
+    opacity: 0.6;
+}
+
+.breadcrum span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.breadcrum span:hover {
+    color: #ff4141;           /* highlight color */
+}
+
+.breadcrum .active {
+    color: #ff4141;
+    font-weight: 600;
+}

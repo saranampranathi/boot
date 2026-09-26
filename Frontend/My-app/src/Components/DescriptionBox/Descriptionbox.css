@@ -1,0 +1,65 @@
+.descriptionbox {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ---------- Navigator ---------- */
+.descriptionbox-navigator {
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Active tab */
+.descriptionboxnavbox {
+  padding: 14px 28px;
+  font-weight: 600;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+/* Inactive tab */
+.descriptionboxnavboxfade {
+  padding: 14px 28px;
+  font-weight: 500;
+  background-color: #f5f5f5;
+  color: #777;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.descriptionboxnavboxfade:hover {
+  background-color: #eeeeee;
+  color: #333;
+}
+
+/* ---------- Description area ---------- */
+.descriptionbox-des {
+  border: 1px solid #e0e0e0;
+  padding: 24px;
+  background-color: #ffffff;
+  line-height: 1.6;
+  color: #444;
+}
+
+.descriptionbox-des p {
+  margin-bottom: 14px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .descriptionbox-navigator {
+    flex-direction: column;
+  }
+
+  .descriptionboxnavbox,
+  .descriptionboxnavboxfade {
+    width: 100%;
+    text-align: center;
+  }
+}
